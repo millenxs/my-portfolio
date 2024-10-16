@@ -26,7 +26,8 @@
 	margin: 0;
 	width: 3rem;
 	height: 3rem;
-	background: #e53939;
+	background: rgb(255,0,128);
+background: linear-gradient(90deg, rgba(255,0,128,1) 0%, rgba(255,77,77,1) 39%, rgba(249,203,40,1) 100%);
 	border-radius: 1.625rem;
    }
    

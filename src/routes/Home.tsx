@@ -48,8 +48,8 @@ const Home = () => {
 
       <div data-aos="fade-up" className="px-6 mt-[9rem]">
         <div className="flex flex-col md:flex-row justify-between items-start gap-4">
-          <p className="flex items-center justify-between w-full md:w-2/3 lg:w-1/2 h-10 px-4 py-2 bg-base-500 text-[#e53939] rounded-full border-2 border-double border-[#e53939] transition-all">
-            <span>Tecnologias</span>
+          <p className=" card-title flex items-center justify-between w-full md:w-2/3 lg:w-1/2 h-10 px-4 py-2 bg-base-500 rounded-full border-2 border-double transition-all">
+            <span  className="relative z-10">Tecnologias</span>
           </p>
 
           <div className="carousel-container">

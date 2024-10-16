@@ -83,20 +83,20 @@ const Projects = () => {
 
   return (
 	<section id="projects">
-	<div className="px-4 sm:px-6">
-	  <p className="flex items-center justify-between w-full md:w-1/2 lg:w-1/3 h-10 px-4 py-2 bg-base-500 text-[#e53939] rounded-full border-2 border-double border-[#e53939] transition-all">
-		<span>Projetos</span>
+	<div className="px-4 sm:px-6" data-aos="fade-right">
+	<p className="card-title flex items-center justify-between w-full md:w-1/2 lg:w-1/3 h-10 px-4 py-2 bg-base-500 rounded-full border-2 transition-all">          
+		<span  className="relative z-10">Projetos</span>
 	  </p>
 	</div>
-	<div className="px-4 m-4 p-4 flex flex-col md:flex-row space-x-0 md:space-x-4 space-y-4 md:space-y-0">
-	  <button onClick={() => setFilter("")} className="px-6 py-2 text-white font-bold text-xs rounded-full shadow-lg transition-transform transform bg-transparent border-2 border-white hover:scale-105 hover:border-red-600 hover:shadow-red-500/50 hover:shadow-2xl focus:outline-none">Todos</button>
+	<div className="px-4 m-4 p-4 flex flex-col md:flex-row space-x-0 md:space-x-4 space-y-4 md:space-y-0"  data-aos="fade-down-right">
+	  <button onClick={() => setFilter("")}  className="px-6 py-2 text-white font-bold text-xs rounded-full shadow-lg transition-transform transform bg-transparent border-2 border-white hover:scale-105 hover:bg-gradient-to-r hover:from-pink-500 hover:via-red-500 hover:to-yellow-400 hover:bg-clip-text hover:text-transparent hover:border-transparent hover:border-[3px] hover:border-image-[linear-gradient(to right, #ec4899, #f43f5e, #f59e0b)] hover:border-image-slice-[1] hover:shadow-red-500/50 hover:shadow-2xl focus:outline-none">Todos</button>
 	  <button onClick={() => setFilter("Frontend")} className="px-6 py-2 text-white font-bold text-xs rounded-full shadow-lg transition-transform transform bg-transparent border-2 border-white hover:scale-105 hover:border-red-600 hover:shadow-red-500/50 hover:shadow-2xl focus:outline-none">Frontend</button>
 	  <button onClick={() => setFilter("Fullstack")} className="px-6 py-2 text-white font-bold text-xs rounded-full shadow-lg transition-transform transform bg-transparent border-2 border-white hover:scale-105 hover:border-red-600 hover:shadow-red-500/50 hover:shadow-2xl focus:outline-none">Fullstack</button>
 	  <button onClick={() => setFilter("Python")} className="px-6 py-2 text-white font-bold text-xs rounded-full shadow-lg transition-transform transform bg-transparent border-2 border-white hover:scale-105 hover:border-red-600 hover:shadow-red-500/50 hover:shadow-2xl focus:outline-none">Python</button>
 
 	</div>
 
-	<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 mt-4 mx-4">
+	<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 mt-4 mx-4" data-aos="flip-left">
 	  {filteredProjects.map((project) => (
 		<a
 		  key={project.id}
@@ -114,7 +114,7 @@ const Projects = () => {
 		  )}
 
 		  <div className="relative p-4 sm:p-6 lg:p-8">
-			<p className="text-sm font-medium uppercase tracking-widest text-red-500">{project.primaryLanguage}</p>
+			<p className="text-sm font-medium uppercase tracking-widest bg-gradient-to-r from-pink-500 via-red-500 to-yellow-400 bg-clip-text text-transparent ">{project.primaryLanguage}</p>
 
 			<p className="text-xl font-bold text-white sm:text-2xl">{project.name}</p>
 

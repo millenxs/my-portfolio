@@ -27,8 +27,8 @@ const Experience: React.FC = () => {
   return (
     <section id="experience">
       <div className="px-6 mt-[5rem]">
-        <p className="flex items-center justify-between w-full md:w-1/2 lg:w-1/3 h-10 px-4 py-2 bg-base-500 text-[#e53939] rounded-full border-2 border-double border-[#e53939] transition-all">
-          <span>Experiência Profissional</span>
+	  <p className="card-title flex items-center justify-between w-full md:w-1/2 lg:w-1/3 h-10 px-4 py-2 bg-base-500 rounded-full border-2 transition-all">          
+          <span className="relative z-10">Experiência Profissional</span>
         </p>
       </div>
       <div className="timeline w-full max-w-[1000px] mx-auto my-12 p-8 box-border relative mb-20" >
@@ -51,11 +51,11 @@ const TimelineItem: React.FC<{ item: { title: string; description: string; date:
   return (
     <li ref={ref} data-aos="fade-up" className={`${inView ? 'fade-in' : 'fade-out'} relative w-[50%] px-10 box-border list-none`}>
       <div className="content pb-5">
-        <h2 className="text-[#e53939] font-bold mt-8">{item.title}</h2>
-		<h4 className="text-[#e53939] font-semibold">{item.subtitle}</h4>
+        <h2 className="bg-gradient-to-r from-pink-500 via-red-500 to-yellow-400 bg-clip-text text-transparent font-bold mt-8">{item.title}</h2>
+		<h4 className="bg-gradient-to-r from-pink-500 via-red-500 to-yellow-400 bg-clip-text text-transparent font-semibold">{item.subtitle}</h4>
         <p className="mt-2">{item.description}</p>
       </div>
-      <div className="time absolute top-3 bg-[#e53939] text-white py-2 px-4 rounded-full shadow-md">
+      <div className="time absolute top-3 bg-gradient-to-r from-pink-500 via-red-500 to-yellow-400 text-white py-2 px-4 rounded-full shadow-md">
         <h4>{item.date}</h4>
       </div>
     </li>

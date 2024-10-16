@@ -12,8 +12,8 @@ export default function About() {
   return (
     <section id="about-me">
       <div className="px-4 sm:px-6 mt-[5rem]" data-aos="fade-up">
-        <p className="flex items-center justify-between w-full md:w-1/2 lg:w-1/3 h-10 px-4 py-2 bg-base-500 text-[#e53939] rounded-full border-2 border-double border-[#e53939] transition-all">
-          <span>Sobre Mim</span>
+	  <p className="card-title flex items-center justify-between w-full md:w-1/2 lg:w-1/3 h-10 px-4 py-2 bg-base-500 rounded-full border-2 transition-all">          
+	  		<span  className="relative z-10">Sobre Mim</span>
         </p>
       </div>
       <div className="lg:flex lg:justify-center lg:items-center gap-8">
@@ -33,7 +33,7 @@ export default function About() {
                   <li className="p-1 leading-none">
                     <a
                       href="https://www.linkedin.com/in/millena-medeiros-76467b106/"
-                      className="text-base font-medium text-gray-300"
+                      className="text-base font-medium text-gray-300 hover:text-[#ff0080]"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -43,7 +43,7 @@ export default function About() {
                   <li className="p-1 leading-none">
                     <a
                       href="https://www.instagram.com/millenameedeiros"
-                      className="text-base font-medium text-gray-300"
+                      className="text-base font-medium text-gray-300 hover:text-[#ff4d4d]"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -52,8 +52,9 @@ export default function About() {
                   </li>
                   <li className="p-1 leading-none">
                     <a
-                      href="/curriculo"
-                      className="text-base font-medium text-gray-300"
+                      href="/Curriculo.pdf"
+					  download="Curriculo_Millena_Medeiros.pdf"
+                      className="text-base font-medium text-gray-300 hover:text-[#f9cb28]"
                     >
                       Currículo
                     </a>
@@ -67,7 +68,7 @@ export default function About() {
 				<h2 className="mb-4 text-lg">Ultimos Projetos:</h2>
               <a
                 href="https://github.com/millenxs/veganbot-node"
-                className="block h-full rounded-lg border border-red-500/30 p-4 hover:border-red-500/70"
+                className="block h-full rounded-lg border border-[#ff0080] p-4 hover:border-[#f9cb28]"
               >
                 <strong className="font-medium text-white">
                   VeganBot
@@ -80,7 +81,7 @@ export default function About() {
             <li>
               <a
                 href="https://github.com/millenxs/recipes-web"
-                className="block h-full rounded-lg border border-red-500/30 p-4 hover:border-red-500/70"
+                className="block h-full rounded-lg border border-[#ff0080] p-4 hover:border-[#f9cb28]"
               >
                 <strong className="font-medium text-white">
                   RecipesWeb
@@ -97,7 +98,7 @@ export default function About() {
         </button>
           </div>
         </article>
-        <div className="h-auto lg:w-1/2" data-aos="fade-left">
+        <div className="h-auto lg:w-1/2 px-4" data-aos="fade-left">
           <span className="text-sm sm:text-lg">
             Sou formada em Análise e Desenvolvimento de Sistemas com foco em
             desenvolvimento front-end desde 2022. Aprimorei minhas habilidades

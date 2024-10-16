@@ -20,3 +20,23 @@ body {
   #root {
 	animation: fadeIn 1s ease-in-out;
   }
+
+  .card-title {
+	position: relative;
+	z-index: 1;
+	background: #fff; /* Cor de fundo interna */
+	border-radius: 9999px; /* rounded-full */
+  }
+  
+  .card-title::before {
+	content: '';
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	right: -2px;
+	bottom: -2px;
+	z-index: -1;
+	background: linear-gradient(90deg, rgba(255, 0, 128, 1) 0%, rgba(255, 77, 77, 1) 39%, rgba(249, 203, 40, 1) 100%);
+	border-radius: 9999px; /* Aplicando o arredondamento ao pseudo-elemento */
+  }
+  
