@@ -1,0 +1,35 @@
+.carousel-container {
+	overflow: hidden; 
+	width: 100%; 
+  }
+  
+  .carousel {
+	display: flex;
+	white-space: nowrap;
+	animation: scroll 15s linear infinite; 
+  }
+  
+  .carousel span {
+	margin-right: 2rem;
+	font-weight: bold;
+	font-size: 1.2rem;
+	color: #e53939;
+  }
+  
+  .language-logo {
+	width: 50px; /* Tamanho da logo */
+	height: 50px;
+	margin-right: 10px; /* Espaçamento entre a logo e o texto */
+	
+  }
+ 
+  @keyframes scroll {
+	0% {
+	  transform: translateX(100%); 
+	}
+	100% {
+	  transform: translateX(-100%);
+	}
+  }
+  
+  

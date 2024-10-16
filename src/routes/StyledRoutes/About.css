@@ -1,0 +1,57 @@
+/*** Button Code ****/
+
+.slide {
+	text-align: center;
+	color: #fff;
+	display: inline-block;
+	position: relative;
+	padding: 4px 0;
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: 300;
+	letter-spacing: 3px;
+	margin: 0;
+	transform: translateX(-50%);
+	left: 50%;
+  }
+  
+  .slide:before {
+	color: #fff;
+	content: '';
+	display: block;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 1px;
+	width: 0;
+	transition: width 0s ease, border-bottom .5s ease;
+  }
+  
+  .slide:hover:before {
+	width: 100%;
+	border-bottom: 1px solid #fff;
+	transition: width .5s ease;
+  }
+  
+  .slide:after {
+	  content: '';
+	  display: block;
+	  position: absolute;
+	  right: 0;
+	  bottom: 0;
+	  height: 1px;
+	  width: 0;
+	  border-bottom: 1px solid #fff;
+	  transition: width .5s ease;
+  }
+  .slide:hover:after {
+	  width: 100%;
+	  border-bottom: 1px solid transparent;
+	  transition: all 0s ease;
+  }
+  
+
+  
+  
+  
+  

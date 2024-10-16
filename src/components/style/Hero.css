@@ -1,0 +1,277 @@
+
+@font-face {
+    font-family: 'Inter'; 
+    src: url('https://res.cloudinary.com/du6mfjbbd/raw/upload/v1696975586/wegxkv6mdriebvpvokwf.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.hero-container html, 
+.hero-container body {
+    height: 100%;
+}
+
+.hero-container {
+	height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.hero_title__H3hra {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    font-size: 5rem;
+    line-height: 1;
+    font-weight: 800;
+    letter-spacing: -.06em;
+    margin: 0 0 40px;
+}
+
+:root {
+    --preview-start-gradient: #7928ca;
+    --preview-end-gradient: #ff0080;
+    --ship-start-gradient: #ff4d4d;
+    --ship-end-gradient: #f9cb28;
+    --develop-start-gradient: #007cf0;
+    --develop-end-gradient: #00dfd8;
+
+    --geist-secondary-lighter: var(--accents-2);
+    --geist-secondary-light: var(--accents-3);
+    --geist-secondary: var(--accents-5);
+    --geist-secondary-dark: var(--accents-7);
+    --geist-link-color: var(--geist-success-light);
+    --geist-marketing-gray: var(--accents-1);
+    --geist-code: var(--geist-foreground);
+    --geist-error-light: #f33;
+    --geist-error: red;
+    --geist-error-dark: #e60000;
+    --geist-text-gradient: linear-gradient(180deg,#fff,hsla(0,0%,100%,.75));
+}
+
+.animated-gradient-text_background__tSv9a {
+    position: relative;
+    display: block;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.animated-gradient-text_background-1__yGu4G:before {
+    animation: animated-gradient-text_fade-background-1__EGNch 8s infinite;
+}
+
+.animated-gradient-text_foreground-1__s2FIH {
+    animation: animated-gradient-text_fade-foreground-1__3rW7l 8s infinite;
+}
+
+/* Continue a adicionar o escopo .hero-container para as demais classes */
+
+.animated-gradient-text_background-2__wnP8s:before {
+    animation: animated-gradient-text_fade-background-2__MZFRk 8s infinite;
+}
+
+.animated-gradient-text_foreground-2__m3PnD {
+    animation: animated-gradient-text_fade-foreground-2__P9mAq 8s infinite;
+}
+
+.animated-gradient-text_background-3__sz5ye:before {
+    animation: animated-gradient-text_fade-background-3__VVOJd 8s infinite;
+}
+
+.animated-gradient-text_foreground-3__KfLOT {
+    animation: animated-gradient-text_fade-foreground-3__eTWJh 8s infinite;
+}
+
+.stop-hero-animation .animated-gradient-text_background__tSv9a, 
+.stop-hero-animation .animated-gradient-text_background__tSv9a:before, 
+.stop-hero-animation .animated-gradient-text_foreground__PuOdy {
+    animation: none !important;
+}
+
+.animated-gradient-text_foreground__PuOdy {
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(90deg, var(--start-color), var(--end-color));
+    position: relative;
+    z-index: 1;
+}
+
+.animated-gradient-text_background__tSv9a:before {
+    content: var(--content);
+    position: absolute;
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: -10px;
+    background: var(--geist-text-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+}
+
+
+@keyframes animated-gradient-text_fade-foreground-1__3rW7l {
+	0%,16.667%,to {
+		opacity: 1
+	}
+
+	33.333%,83.333% {
+		opacity: 0
+	}
+}
+
+@keyframes animated-gradient-text_fade-background-1__EGNch {
+	0%,16.667%,to {
+		opacity: 0
+	}
+
+	25%,91.667% {
+		opacity: 1
+	}
+}
+
+@keyframes animated-gradient-text_fade-foreground-2__P9mAq {
+	0%,to {
+		opacity: 0
+	}
+
+	33.333%,50% {
+		opacity: 1
+	}
+
+	16.667%,66.667% {
+		opacity: 0
+	}
+}
+
+@keyframes animated-gradient-text_fade-background-2__MZFRk {
+	0%,to {
+		opacity: 1
+	}
+
+	33.333%,50% {
+		opacity: 0
+	}
+
+	25%,58.333% {
+		opacity: 1
+	}
+}
+
+@keyframes animated-gradient-text_fade-foreground-3__eTWJh {
+	0%,50%,to {
+		opacity: 0
+	}
+
+	66.667%,83.333% {
+		opacity: 1
+	}
+}
+
+@keyframes animated-gradient-text_fade-background-3__VVOJd {
+	0%,58.333%,91.667%,to {
+		opacity: 1
+	}
+
+	66.667%,83.333% {
+		opacity: 0
+	}
+}
+
+
+/* Button */
+
+
+.hero_gradient-button__DMHUU {
+	background-color: var(--geist-background);
+	background-clip: padding-box;
+	border: 1px solid transparent;
+	box-shadow: 0 4px 4px 0 #00000010;
+	color: var(--geist-foreground);
+	transition-property: color,background-color,box-shadow;
+	transition-duration: .15s;
+	transition-timing-function: ease
+}
+
+.hero_gradient-button__DMHUU {
+	box-shadow: 0 4px 4px 0 #00000040
+}
+
+.hero_gradient-button__DMHUU[data-hover] {
+	--lighten-color: transparent;
+	color: var(--geist-background);
+	background-color: transparent!important
+}
+
+.hero_gradient-button__DMHUU[data-active] {
+	--lighten-color: hsla(0,0%,100%,.5)
+}
+
+.hero_gradient-button__DMHUU[data-focus] {
+	box-shadow: 0 0 0 1px var(--geist-background),0 0 0 3px var(--themed-bg,var(--geist-foreground))
+}
+
+/***********************/
+
+
+.home-hero-bg-bottom-overlay {
+	z-index: -1;
+	height: 250px;
+	background-image: linear-gradient(rgba(23,24,29,0),#17181d 36%);
+	position: absolute;
+	top: auto;
+	bottom: 0%;
+	left: 0%;
+	right: 0%
+}
+
+.bg-wrap {
+	z-index: -1;
+	background-color: #222326;
+	position: absolute;
+	top: 0%;
+	bottom: 0%;
+	left: 0%;
+	right: 0%
+}
+.bg-wrap::before {
+	content: "";
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	opacity: 1;
+	will-change: background, opacity;
+	transition-duration: 400ms;
+	transition-timing-function: ease;
+	transition-delay: 0s;
+	transition-property: opacity;
+	background-image: radial-gradient( 600px at var(--cursor-x) var(--cursor-y), rgba(255, 254, 241, 0.15), transparent 40% );
+	background-size: auto;
+	background-origin: padding-box;
+	z-index: 1;
+}
+
+
+
+.bg-tiles {
+	z-index: 1;
+	background-image: url(https://res.cloudinary.com/du6mfjbbd/image/upload/v1702421944/632835c8722a32c6adef674b_bg-tile_fhldhc.svg);
+	background-position: 50% 0;
+	background-repeat: repeat;
+	background-size: 142px 71px;
+	position: absolute;
+	top: 0%;
+	bottom: 0%;
+	left: 0%;
+	right: 0%;
+}
