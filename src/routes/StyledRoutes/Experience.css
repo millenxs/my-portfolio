@@ -58,7 +58,7 @@
   @media(max-width: 767px) {
 	.timeline:before {
 	  left: 20px;
-	  height: 100vh;
+	  height: 60vh;
 	}
   
 	.timeline ul li:nth-child(odd),

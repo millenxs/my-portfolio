@@ -11,7 +11,7 @@ export default function Cards() {
 	  };
   
 	return (
-    <div className="flex flex-col gap-8 md:flex-row justify-center mt-9 py-4 px-4" data-aos="fade-right">
+    <div className="flex flex-col md:mx-4 gap-8 md:flex-row justify-center mt-9 py-4 px-4" data-aos="fade-right">
       <div>
         <button className="learn-more" onClick={() => scrollToSection('about-me')}>
           <span className="circle" aria-hidden="true">

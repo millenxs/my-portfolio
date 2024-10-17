@@ -17,7 +17,7 @@ export default function About() {
         </p>
       </div>
       <div className="lg:flex lg:justify-center lg:items-center gap-8">
-        <article className="rounded-xl p-4" data-aos="fade-right">
+        <article className="article-about rounded-xl md:mx-auto md:max-w-lg p-4" data-aos="fade-right">
           <div className="flex flex-col sm:flex-row items-center gap-4">
             <img
               alt="Foto de perfil"
