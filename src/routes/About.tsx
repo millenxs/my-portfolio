@@ -101,14 +101,14 @@ export default function About() {
         <div className="h-auto lg:w-1/2 px-4" data-aos="fade-left">
           <span className="text-sm sm:text-lg">
             Sou formada em Análise e Desenvolvimento de Sistemas com foco em
-            desenvolvimento front-end desde 2022. Aprimorei minhas habilidades
+            desenvolvimento front-end. Aprimorei minhas habilidades
             em HTML5, CSS3, JavaScript, ReactJS e Tailwind CSS por meio de
             projetos pessoais e acadêmicos. Embora eu não tenha experiência
             formal em cargos de tecnologia, apliquei meu conhecimento em
             projetos como um aplicativo de gerenciamento de tarefas utilizando
             PHP e MySQL, e um site de receitas integrado a uma API pública,
-            construído com Vite, ReactJS e Tailwind. Além disso, meu estágio no
-            setor bancário fortaleceu minhas habilidades de comunicação,
+            construído com Vite, ReactJS e Tailwind. Ainda realizei a execução de um bot utilizando API do Gemini e NodeJs no backend.
+			Além disso, meu estágio no setor bancário fortaleceu minhas habilidades de comunicação,
             resolução de problemas e gestão de tempo, preparando-me para atuar
             em equipes de desenvolvimento ágeis.
           </span>

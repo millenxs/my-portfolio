@@ -22,7 +22,7 @@ const Hero = () => {
   }, []);
 
   return (
-	<div className="hero-container">
+	<div className="hero-container" id="hero">
       <h1 aria-label="Develop. Preview. Ship." className="hero_title__H3hra">
         <span
           className="animated-gradient-text_background__tSv9a animated-gradient-text_background-1__yGu4G"
